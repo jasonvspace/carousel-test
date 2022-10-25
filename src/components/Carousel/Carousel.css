@@ -1,0 +1,46 @@
+.carousel-wrapper {
+    display: flex;
+}
+.carousel-wrapper .carousel-container {
+    display: flex;
+    overflow-x: hidden;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+.carousel-wrapper .carousel-item {
+    text-align: left;
+    color: #333;
+    font-family: Arial, sans-serif;
+    width: 190px;
+    min-width: 190px;
+    padding: 0 5px;
+    margin: 0;
+}
+.carousel-wrapper .carousel-item img {
+    width: 100%;
+}
+.carousel-wrapper .carousel-item .title {
+    padding-top: 4px;
+    font-size: 14px;
+}
+.carousel-wrapper .carousel-item .price {
+    font-size: 10px;
+    padding-top: 4px;
+}
+.carousel-wrapper .arrow-left, .carousel-wrapper .arrow-right {
+    height: 100%;
+    width: 100px;
+    min-width: 100px;
+    background-size: 50%;
+    cursor: pointer;
+}
+.carousel-wrapper .arrow-left {
+    background: url('../../assets/arrow_left.svg') no-repeat center center;
+}
+.carousel-wrapper .arrow-right {
+    background: url('../../assets/arrow_right.svg') no-repeat center center;
+}
+.carousel-wrapper .arrow-left.disabled, .carousel-wrapper .arrow-right.disabled {
+    cursor: default;
+    opacity: .2;
+}
